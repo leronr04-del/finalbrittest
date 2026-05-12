@@ -1,4 +1,3 @@
-
 /* MODERN CLASSIC PALETTE */
 :root {
     --charcoal: #2C2C2C;
@@ -23,9 +22,7 @@ body {
     scroll-behavior: smooth;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     font-family: 'Playfair Display', serif;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -71,34 +68,6 @@ nav {
     color: var(--gold);
 }
 
-/* Buttons */
-.btn-small {
-    background: var(--gold);
-    color: var(--charcoal);
-    padding: 8px 18px;
-    text-decoration: none;
-    font-size: 0.8rem;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-.btn-large {
-    background: var(--gold);
-    color: var(--charcoal);
-    padding: 15px 40px;
-    text-decoration: none;
-    font-weight: 600;
-    text-transform: uppercase;
-    display: inline-block;
-    transition: all 0.3s;
-    border: 1px solid var(--gold);
-}
-
-.btn-large:hover {
-    background: transparent;
-    color: var(--gold);
-}
-
 /* Stylist Booking Buttons */
 .stylist-book-btn {
     display: inline-block;
@@ -140,11 +109,6 @@ nav {
     color: var(--gold);
 }
 
-.hero h1 {
-    font-size: 4rem;
-    margin-bottom: 30px;
-}
-
 /* Sections */
 .section {
     padding: 100px 10%;
@@ -163,15 +127,6 @@ nav {
     height: 2px;
     background: var(--gold);
     margin: 15px auto;
-}
-
-.bg-charcoal {
-    background-color: var(--charcoal);
-    color: var(--off-white);
-}
-
-.bg-offwhite {
-    background-color: #f0eee9;
 }
 
 .gold-text {
@@ -194,57 +149,6 @@ nav {
     font-size: 1.8rem;
     margin-bottom: 15px;
     color: var(--walnut);
-}
-
-/* Pricing Section */
-.pricing-container {
-    max-width: 900px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.pricing-list {
-    list-style: none;
-    column-count: 2;
-    column-gap: 80px;
-}
-
-.pricing-list li {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 25px;
-    font-size: 1.1rem;
-    position: relative;
-    break-inside: avoid;
-}
-
-/* Creates dotted lines between service and price */
-.pricing-list li::before {
-    content: '';
-    position: absolute;
-    bottom: 6px;
-    left: 0;
-    right: 0;
-    height: 1px;
-    border-bottom: 2px dotted rgba(197, 160, 89, 0.3);
-    z-index: 1;
-}
-
-.pricing-list li .service-name {
-    background-color: var(--charcoal);
-    padding-right: 15px;
-    z-index: 2;
-    letter-spacing: 0.5px;
-}
-
-.pricing-list li .price-amount {
-    background-color: var(--charcoal);
-    padding-left: 15px;
-    color: var(--gold);
-    font-weight: 600;
-    font-size: 1.2rem;
-    z-index: 2;
 }
 
 /* Info & Hours */
@@ -290,7 +194,6 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
-
     .nav-links {
         display: none;
     }
@@ -307,9 +210,5 @@ footer {
     .hours-list li {
         justify-content: center;
         gap: 20px;
-    }
-
-    .pricing-list {
-        column-count: 1;
     }
 }
