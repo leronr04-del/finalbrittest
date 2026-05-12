@@ -126,7 +126,6 @@ nav {
     background:
         linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
         url('shop1.jpg') center/cover no-repeat;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -191,41 +190,10 @@ nav {
     max-width: 350px;
 }
 
-.img-frame {
-    border: 12px solid var(--walnut);
-    margin-bottom: 25px;
-    background-color: var(--walnut);
-}
-
-.stylist-card img {
-    width: 100%;
-    display: block;
-    filter: sepia(20%);
-}
-
 .stylist-card h3 {
     font-size: 1.8rem;
     margin-bottom: 15px;
     color: var(--walnut);
-}
-
-/* Grids */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-}
-
-.grid img {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-    border: 1px solid rgba(197, 160, 89, 0.3);
-    transition: transform 0.5s;
-}
-
-.grid img:hover {
-    transform: scale(1.03);
 }
 
 /* Pricing Section */
@@ -277,33 +245,6 @@ nav {
     font-weight: 600;
     font-size: 1.2rem;
     z-index: 2;
-}
-
-/* Products */
-.product-container {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.product-card {
-    background: var(--pure-white);
-    padding: 40px;
-    width: 280px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    border-top: 4px solid var(--walnut);
-}
-
-.product-card img {
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.price {
-    font-weight: 600;
-    color: var(--walnut);
-    font-size: 1.1rem;
 }
 
 /* Info & Hours */
