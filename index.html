@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRIT | Premium Grooming</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
     <nav>
@@ -5,18 +14,17 @@
         <ul class="nav-links">
             <li><a href="#stylists">Stylists</a></li>
             <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#inspiration">Inspiration</a></li>
             <li><a href="#pricing">Pricing</a></li>
             <li><a href="#products">Products</a></li>
             <li><a href="#info">Location</a></li>
         </ul>
-        </nav>
+    </nav>
 
     <header class="hero">
         <div class="hero-content">
             <p class="hero-subtitle">ESTABLISHED QUALITY</p>
             <h1>BRIT MENS HAIRCUTS</h1>
-            </div>
+        </div>
     </header>
 
     <section id="stylists" class="section">
@@ -30,7 +38,6 @@
                 <p>As The Owner, with a keen eye for detail and a passion for classic barbering, Brit specializes in tailored cuts that reflect each client's unique character.</p>
                 <a href="https://book.squareup.com/appointments/6clszbzpspv32l/location/LMTXCFDJTFKM6/services?buttonTextColor=ffffff&color=000000&locale=en&referrer=so" class="btn-small stylist-btn">Book With Brit</a>
             </div>
-
             <div class="stylist-card">
                 <div class="img-frame">
                     <img src="nikki.jpg" alt="Nikki">
@@ -42,27 +49,79 @@
         </div>
     </section>
 
-    ```
+    <section id="gallery" class="section bg-charcoal">
+        <h2 class="section-title gold-text">The Shop</h2>
+        <div class="grid">
+            <img src="shop6.jpg" alt="Interior View">
+            <img src="shop2.jpeg" alt="Barber Chair">
+            <img src="shop3.jpg" alt="Waiting Area">
+            <img src="shop4.jpg" alt="The Details">
+        </div>
+    </section>
 
-### CSS Adjustments
-Add this small snippet to the bottom of your `style.css` file to ensure the buttons are centered and spaced correctly within the stylist cards:
+    <section id="pricing" class="section bg-charcoal">
+        <h2 class="section-title gold-text">Pricing & Services</h2>
+        <div class="pricing-container">
+            <ul class="pricing-list">
+                <li><span class="service-name">Toddler Cut</span> <span class="price-amount">$20</span></li>
+                <li><span class="service-name">Taper Side/ back only</span> <span class="price-amount">$20</span></li>
+                <li><span class="service-name">Skin Fade</span> <span class="price-amount">$30</span></li>
+                <li><span class="service-name">Neck Trim</span> <span class="price-amount">$5</span></li>
+                <li><span class="service-name">Kids Under 10</span> <span class="price-amount">$25</span></li>
+                <li><span class="service-name">Design</span> <span class="price-amount">$10</span></li>
+                <li><span class="service-name">Senior Cut</span> <span class="price-amount">$25</span></li>
+                <li><span class="service-name">Classic Cut</span> <span class="price-amount">$30</span></li>
+                <li><span class="service-name">Buzz Cut</span> <span class="price-amount">$25</span></li>
+                <li><span class="service-name">Braids</span> <span class="price-amount">$75</span></li>
+                <li><span class="service-name">Beard Line Up</span> <span class="price-amount">$5</span></li>
+                <li><span class="service-name">Beard Trim</span> <span class="price-amount">$10</span></li>
+                <li><span class="service-name">Shampoo</span> <span class="price-amount">$5</span></li>
+            </ul>
+        </div>
+    </section>
 
-```css
-/* Stylist Button Styling */
-.stylist-btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px; /* Slightly larger for better mobile clicking */
-    transition: background 0.3s ease;
-}
+    <section id="products" class="section bg-offwhite">
+        <h2 class="section-title">Curated Products</h2>
+        <div class="product-container">
+            <div class="product-card">
+                <img src="pomade.jpg" alt="Product">
+                <h3>Matte Clay</h3>
+                <span class="price">$24.00</span>
+            </div>
+            <div class="product-card">
+                <img src="oil.jpg" alt="Product">
+                <h3>Beard Elixir</h3>
+                <span class="price">$20.00</span>
+            </div>
+            <div class="product-card">
+                <img src="wash.jpg" alt="Product">
+                <h3>Daily Cleanser</h3>
+                <span class="price">$22.00</span>
+            </div>
+        </div>
+    </section>
 
-.stylist-btn:hover {
-    background-color: var(--walnut);
-    color: var(--off-white);
-}
+    <section id="info" class="info-section">
+        <div class="info-container">
+            <div class="info-box">
+                <h3>Our Location</h3>
+                <p>800 W Genesee Street Rd<br>Skaneateles, NY 13152</p>
+                <p class="gold-text">Phone: (315) 935-1412</p>
+            </div>
+            <div class="info-box">
+                <h3>Hours</h3>
+                <ul class="hours-list">
+                    <li><span>Monday - Friday</span> <span>9:00 AM - 7:00 PM</span></li>
+                    <li><span>Saturday</span> <span>9:00 AM - 3:00 PM</span></li>
+                    <li><span>Sunday</span> <span>Closed</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-.stylist-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    <footer>
+        <p>&copy; 2026 BRIT MENS HAIRCUTS. Handcrafted Grooming.</p>
+    </footer>
+
+</body>
+</html>
