@@ -1,139 +1,5 @@
-/* MODERN CLASSIC PALETTE */
-:root {
-    --charcoal: #2C2C2C;
-    --walnut: #6B4F3F;
-    --gold: #C5A059;
-    --off-white: #FAF9F6;
-    --pure-white: #FFFFFF;
-}
 
-/* Base Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: var(--off-white);
-    color: var(--charcoal);
-    line-height: 1.8;
-    scroll-behavior: smooth;
-}
-
-h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-/* Navigation */
-nav {
-    background-color: var(--charcoal);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 5%;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    border-bottom: 2px solid var(--gold);
-}
-
-.logo {
-    color: var(--gold);
-    font-weight: 900;
-    font-size: 1.4rem;
-    font-family: 'Playfair Display', serif;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-}
-
-.nav-links a {
-    color: var(--off-white);
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 0.85rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: var(--gold);
-}
-
-/* Stylist Booking Buttons */
-.stylist-book-btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 28px;
-    background: var(--gold);
-    color: var(--charcoal);
-    text-decoration: none;
-    font-size: 0.85rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border: 1px solid var(--gold);
-    transition: all 0.3s ease;
-}
-
-.stylist-book-btn:hover {
-    background: transparent;
-    color: var(--gold);
-}
-
-/* Hero Section */
-.hero {
-    height: 80vh;
-    background:
-        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url('shop1.jpg') center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: var(--off-white);
-}
-
-.hero-subtitle {
-    letter-spacing: 6px;
-    margin-bottom: 10px;
-    font-weight: 300;
-    color: var(--gold);
-}
-
-/* Sections */
-.section {
-    padding: 100px 10%;
-    text-align: center;
-}
-
-.section-title {
-    font-size: 2.5rem;
-    margin-bottom: 50px;
-}
-
-.section-title::after {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 2px;
-    background: var(--gold);
-    margin: 15px auto;
-}
-
-.gold-text {
-    color: var(--gold);
-}
-
-/* Stylists */
+/* Updated Stylist Card Layout */
 .stylist-container {
     display: flex;
     justify-content: center;
@@ -143,6 +9,23 @@ nav {
 
 .stylist-card {
     max-width: 350px;
+    display: flex; /* Added to align button at the bottom */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.img-frame {
+    border: 12px solid var(--walnut);
+    margin-bottom: 25px;
+    background-color: var(--walnut);
+    width: 100%; /* Ensures frame doesn't shrink */
+}
+
+.stylist-card img {
+    width: 100%;
+    display: block;
+    filter: sepia(20%);
 }
 
 .stylist-card h3 {
@@ -151,64 +34,24 @@ nav {
     color: var(--walnut);
 }
 
-/* Info & Hours */
-.info-section {
-    background-color: var(--walnut);
-    color: var(--off-white);
-    padding: 80px 10%;
+.stylist-card p {
+    margin-bottom: 20px;
+    flex-grow: 1; /* Pushes the button to the bottom if text lengths differ */
 }
 
-.info-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 40px;
+/* Specific styling for the Booking Button under Stylists */
+.stylist-btn {
+    display: inline-block;
+    width: auto;
+    min-width: 200px;
+    padding: 12px 25px;
+    transition: all 0.3s ease;
+    border: 1px solid var(--gold);
+    cursor: pointer;
 }
 
-.info-box h3 {
-    color: var(--gold);
-    margin-bottom: 25px;
-    font-size: 1.5rem;
-}
-
-.hours-list {
-    list-style: none;
-    min-width: 300px;
-}
-
-.hours-list li {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid rgba(250, 249, 246, 0.1);
-    padding: 10px 0;
-}
-
-footer {
-    background: var(--charcoal);
-    color: #888;
-    text-align: center;
-    padding: 40px;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
-
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .info-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hours-list li {
-        justify-content: center;
-        gap: 20px;
-    }
+.stylist-btn:hover {
+    background-color: transparent;
+    color: var(--walnut);
+    border: 1px solid var(--walnut);
 }
